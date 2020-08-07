@@ -22,9 +22,9 @@ Route::get('user', function () {
   return view('test');
  
  });
-Route::get('user/{id}', function ($id) {  
+Route::get('user/{id}/{name?}', function ($id,$name=" ") {  
  // return view('test');
- return "user id is=".$id;
+ return "user id is=".$id.$name;
 });
 
 Route::get('hello', function () {
